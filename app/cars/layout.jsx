@@ -1,34 +1,32 @@
-export const metadata = {
-    title: 'cars',
-}
-
-const CarsLayout = ({ children }) => {
-    return (
+const CarsLayout = ({children}) => {
+    return(
         <>
+            
             {children}
-            <div
+
+            <div 
                 style={{
-                    position: "fixed",
-                    width: "90px",
-                    height: "90px",
-                    background: "purple",
-                    zIndex: "1000",
-                    top: "100px",
-                    left: "10px",
-                    color: "white",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    borderRadius: "100%",
-                    flexDirection: "column",
-                    boxShadow: "0 0 5px gray",
-                    cursor: "pointer"
-                }}>
-                <i className='fa fa-shopping-basket'></i>
-                My Cart
+                    backgroundColor:"blue",
+                    width:"10rem",
+                    cursor:"pointer",
+                    height:"10rem",
+                    position:"fixed",
+                    top:"20rem",
+                    left:"20rem",
+                    borderRadius:"10rem",
+                    display:"flex",
+                    justifyContent:"center",
+                    alignItems:"center",
+                    color:"white",
+                    flexDirection:"column",
+                    gap:"1rem",
+                    fontSize:"2rem"}} >
+                
+                <i className="fa fa-shopping-basket"></i>
+                کارت من
             </div>
         </>
-    );
-}
+    )
+};
 
 export default CarsLayout;
