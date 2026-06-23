@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Cars',
+}
+
+
 const CarsLayout = ({children}) => {
     return(
         <>

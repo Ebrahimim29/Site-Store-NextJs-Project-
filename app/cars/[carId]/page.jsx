@@ -1,17 +1,26 @@
-'use client'
 
-// export const generateMetadata = ({ params, searchParams })=>{
+export const generateMetadata = ({ params, searchParams }) => {
+    return {
+        title: `car no ${params.carId}`,
+    }
+}
+
+// export const generateMetadata = async({params, searchParams}) => {
+//     const res = await fetch("https://")
+//     const title = res.formData.title
 //     return {
-//         title: `car no ${params.carId}`,
+//         title
 //     }
 // }
 
 const Page = ({ params, searchParams }) => {
-    console.log(params);
+    // console.log(params);
     
     return (
         <section className="featured-cars" style={{width:"100%",display:"flex", flexDirection:"column", marginTop:"70px", justifyContent:"center", alignItems:"center"}}>
-            <div className="col-lg-3 col-md-4 col-sm-6" onClick={()=>{console.log(searchParams);}} >
+            <div className="col-lg-3 col-md-4 col-sm-6" 
+            // onClick={()=>{console.log(searchParams);}}
+             >
                 <h1>
                     Car No:
                     {params.carId}
@@ -44,6 +53,7 @@ const Page = ({ params, searchParams }) => {
 }
 
 export default Page;
+
 
 // const Page = ({ params, searchParams }) => {
     // return (
